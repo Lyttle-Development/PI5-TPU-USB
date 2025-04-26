@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ghcr.io/lyttle-development/PI5-TPU-USB:main .
+        run: docker build -t ghcr.io/lyttle-development/pi-5-tpu-usb:main .
 
       - name: Push Docker image to GitHub Container Registry
-        run: docker push ghcr.io/lyttle-development/PI5-TPU-USB:main
+        run: docker push ghcr.io/lyttle-development/pi-5-tpu-usb:main
